@@ -3,11 +3,17 @@
 source 'https://rubygems.org'
 
 gem 'dotenv'
+gem 'rack'
 gem 'sinatra'
+gem 'thin'
 
 group :development do
   gem 'pry'
   gem 'pry-byebug'
-  gem 'pry-rescue'
-  gem 'pry-stack_explorer'
+end
+
+group :test do
+  gem 'climate_control'
+  gem 'rack-test'
+  gem 'rspec'
 end
