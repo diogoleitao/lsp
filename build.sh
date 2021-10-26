@@ -1,2 +1,4 @@
 gem install bundler
-bundler install --path=/vendor/gems --without development test
+bundle config set --local path './vendor/bundle'
+bundle config set --local without 'development test'
+bundler install
