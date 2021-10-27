@@ -13,7 +13,6 @@ group :development do
 end
 
 group :test do
-  gem 'climate_control'
   gem 'rack-test'
   gem 'rspec'
 end
