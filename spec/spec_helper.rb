@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'dotenv'
-require 'climate_control'
 require 'rack/test'
 require 'sinatra'
 require 'line_server'

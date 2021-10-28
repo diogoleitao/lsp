@@ -26,7 +26,7 @@ describe 'Line Server', type: :request do
 
     context 'when index is greater than total lines' do
       it 'returns empty body and 413 code' do
-        get '/lines/1000'
+        get '/lines/0'
 
         expect(last_response.status).to be 413
         expect(last_response.body).to be_empty
