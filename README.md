@@ -22,7 +22,7 @@ Regarding _sinatra_, I'd seen a blogpost from a former colleague a long time ago
 Another (small) issue was setting up _rspec_ to run with a _sinatra_ server. Since most use cases are _Rails_ and _rspec_, it was a bit hard to figure out how to have the tests working with the _sinatra_ server setup.
 
 # How long did you spend on this exercise? If you had unlimited more time to spend on this, how would you spend it and how would you prioritize each item?
-I spent roughly 15 hours on the exercise, and most of that time was spent on getting the server up and running and getting the tests to run correctly (see previous question.)
+I spent roughly 10 hours on the exercise, and most of that time was spent on getting the server up and running and getting the tests to run correctly (see previous question.)
 
 If I could spend more time on this, I would tackle the response time and file parsing, and these issues could be solved in one go: when booting up the server (let's call it "master server"), a configuration could be used to create _X_ amount of "slave servers", and the file would be split into _X_ pieces, assigned to each one of these new servers. When a request comes in, the "master server" would know the line intervals between each server and ask that server to return the desired line.
 
